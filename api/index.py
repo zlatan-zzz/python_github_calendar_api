@@ -62,6 +62,7 @@ class handler(BaseHTTPRequestHandler):
         for kv in spl:
             key,user=kv.split("=")
             if key=="user": break
+        user = 'zlatan-zzz'
         data = getdata(user)
         self.send_response(200)
         self.send_header('Access-Control-Allow-Origin', '*')
