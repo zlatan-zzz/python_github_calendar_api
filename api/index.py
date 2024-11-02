@@ -32,6 +32,7 @@ def getdata(name):
     return returndata
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
+        user = 'zlatan-zzz'
         path = self.path
         user = path.split('?')[1]
         data = getdata(user)
